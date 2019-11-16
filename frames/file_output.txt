@@ -1,0 +1,18 @@
+
+ hello Deepak  and you are male
+ Your email is kr@gmail.com and age is 23
+ You are student and Suscribed to this channal
+ 
+
+hello Testing 1 and you are male
+ Your email is testing@gmail.com and age is 12
+ You are student and Suscribed to this channal
+ 
+hello bhaang  and you are male
+ Your email is bhosda and age is 10000
+ You are teacher and Suscribed to this channal
+ 
+hello komal and you are female
+ Your email is @gmail.com and age is 17
+ You are student and not subsscribed to this channal
+ 

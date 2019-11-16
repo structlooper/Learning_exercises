@@ -1,0 +1,50 @@
+import tkinter as tk
+from tkinter import ttk
+win = tk.Tk()
+win.title('Loop')
+
+lables = ['what is your name : ','what is your age : ','select your gender : ','contry : ','state : ','city : ']
+
+for i in range(len(lables)):
+    cur_lable = 'lable' + str(i)
+    cur_lable = ttk.Label(win,text = lables[i])
+    cur_lable.grid(row=i, column=0,sticky=tk.W, padx = 10,pady = 5)
+
+# for i in range(len(lables)):
+
+# entry
+user_info = {
+    'name': tk.StringVar(),
+    'age': tk.StringVar(),
+    'gender': tk.StringVar(),
+    'city': tk.StringVar() ,   
+    'country': tk.StringVar(),
+    'state': tk.StringVar()
+    
+}
+counter = 0
+for i in user_info:
+    cur_entrybox = 'entry'+i
+    cur_entrybox = ttk.Entry(win, width=18, textvariable = user_info[i])
+    cur_entrybox.grid(row=counter,column=1,padx = 10,pady = 5)
+    counter +=1
+
+def action():
+    
+    user_name = user_info['name'].get()
+    # print(user_name)
+    user_age = user_info['age'].get()
+    user_gender   = user_info['gender'].get()
+    user_city    = user_info['city'].get()
+    user_country    = user_info['country'].get()
+    user_state    = user_info['state'].get()
+        
+
+
+    print(f"{user_name},{user_age},{user_gender},{user_city},{user_country},{user_state}")
+
+
+submit_btn = ttk.Button(win, text = 'Submit', command = action )
+submit_btn.grid(row=100,column=1,sticky=tk.W,padx = 10, pady= 5)
+
+win.mainloop()
